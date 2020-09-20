@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/css/bootstrap-custom.css" />
+  </head>
+
+  <!-- 
+  
+  ***     Auther: Api Al Rahman    ***
+  
+  -->
+
+  <body class="bg-secondary">
+    <!-- Navbar -->
+    <nav class="bg-white py-4 shadow-sm">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <a href="/">
+            <h4 class="font-weight-bold text-primary">ZWallet</h4>
+          </a>
+
+          <button id="more" class="btn bg-primary py-2 px-2 d-lg-none">
+            <img
+              src="assets/images/icons/more-vert.svg"
+              height="24px"
+              width="24px"
+            />
+          </button>
+
+          <div class="d-none d-lg-flex align-items-center">
+            <img
+              alt="profile"
+              src="assets/images/profile-image.png"
+              width="52px"
+              height="52px"
+            />
+
+            <div class="mx-3">
+              <div class="font-weight-bold text-dark">Robert Chandler</div>
+              <span class="small text-black-50">+62 8139 3877 7946</span>
+            </div>
+
+            <a href="#">
+              <img
+                alt="notification"
+                src="assets/images/icons/bell.svg"
+                height="24px"
+                width="24px"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Sidebar -->
+    <div class="side-navbar d-lg-none p-4" id="sidebar">
+      <div class="d-flex justify-content-between align-items-center">
+        <h4 class="font-weight-bold text-primary pb-0 mb-0">ZWallet</h4>
+
+        <button type="button" class="btn p-0" id="dismiss">
+          <img src="assets/images/icons/x.svg" height="28px" width="28px" />
+        </button>
+      </div>
+
+      <div class="mt-4">
+        <img
+          alt="profile"
+          src="assets/images/profile-image.png"
+          width="70px"
+          height="70px"
+        />
+
+        <div class="d-flex align-items-center justify-content-between">
+          <div class="mt-2">
+            <div class="font-weight-bold text-dark">Robert Chandler</div>
+            <span class="small text-black-50">+62 8139 3877 7946</span>
+          </div>
+
+          <a href="#">
+            <img
+              alt="notification"
+              src="assets/images/icons/bell.svg"
+              height="24px"
+              width="24px"
+            />
+          </a>
+        </div>
+
+        <hr class="my-3" />
+
+        <ul class="p-0">
+          <li class="d-flex align-items-center">
+            <img
+              alt="dashboard"
+              src="assets/images/icons/grid-dark.svg"
+              height="24px"
+              width="24px"
+            />
+            <a href="/dashboard.html" class="text-dark">
+              <h6 class="ml-2 mb-0">Dashboard</h6>
+            </a>
+          </li>
+          <li class="d-flex align-items-center my-4 active">
+            <img
+              alt="transfer"
+              src="assets/images/icons/arrow-up-active.svg"
+              height="24px"
+              width="24px"
+            />
+            <a href="/search-receiver.html" class="text-primary">
+              <h6 class="ml-2 mb-0">Transfer</h6>
+            </a>
+          </li>
+          <li class="d-flex align-items-center my-4">
+            <img
+              alt="plus"
+              src="assets/images/icons/plus.svg"
+              height="24px"
+              width="24px"
+            />
+            <a href="#" class="text-dark">
+              <h6 class="ml-2 mb-0">Top Up</h6>
+            </a>
+          </li>
+          <li class="d-flex align-items-center my-4">
+            <img
+              alt="profile"
+              src="assets/images/icons/user.svg"
+              height="24px"
+              width="24px"
+            />
+            <a href="#" class="text-dark">
+              <h6 class="ml-2 mb-0">Profile</h6>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="sidebar-overlay d-lg-none" id="sidebar-overlay"></div>
+    <!-- End Sidebar -->
+
+    <!-- Content -->
+    <section class="my-5 container">
+      <div class="row">
+        <div
+          class="col-3 d-lg-flex d-none side-nav-left bg-white flex-column justify-content-between shadow-sm py-4"
+        >
+          <ul>
+            <li class="d-flex align-items-center my-4">
+              <img
+                alt="dashboard"
+                src="assets/images/icons/grid-dark.svg"
+                height="24px"
+                width="24px"
+              />
+              <a href="/dashboard.html" class="text-dark">
+                <h6 class="ml-2 mb-0">Dashboard</h6>
+              </a>
+            </li>
+            <li class="d-flex align-items-center my-4 active">
+              <img
+                alt="transfer"
+                src="assets/images/icons/arrow-up-active.svg"
+                height="24px"
+                width="24px"
+              />
+              <a href="/search-receiver.html" class="text-primary">
+                <h6 class="ml-2 mb-0">Transfer</h6>
+              </a>
+            </li>
+            <li class="d-flex align-items-center my-4">
+              <img
+                alt="plus"
+                src="assets/images/icons/plus.svg"
+                height="24px"
+                width="24px"
+              />
+              <a href="#" class="text-dark">
+                <h6 class="ml-2 mb-0">Top Up</h6>
+              </a>
+            </li>
+            <li class="d-flex align-items-center my-4">
+              <img
+                alt="profile"
+                src="assets/images/icons/user.svg"
+                height="24px"
+                width="24px"
+              />
+              <a href="#" class="text-dark">
+                <h6 class="ml-2 mb-0">Profile</h6>
+              </a>
+            </li>
+          </ul>
+
+          <ul>
+            <li class="d-flex align-items-center my-4">
+              <img
+                alt="logout"
+                src="assets/images/icons/log-out.svg"
+                height="24px"
+                width="24px"
+              />
+              <a href="#" class="text-dark">
+                <h6 class="ml-2 mb-0">Keluar</h6>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-lg-9 pl-3">
+          <div class="p-4 bg-white side-nav-right shadow-sm">
+            <div class="d-flex align-items-center flex-column my-3">
+              <img
+                src="assets/images/icons/success-circle.svg"
+                height="50px"
+                width="50px"
+              />
+              <div class="font-weight-bold mt-3">Transfer Success</div>
+            </div>
+
+            <div class="shadow-sm rounded-14 pl-3 my-4 py-3">
+              <div class="small">Amount</div>
+              <div class="font-weight-bold text-dark">Rp100.000</div>
+            </div>
+
+            <div class="shadow-sm rounded-14 pl-3 my-4 py-3">
+              <div class="small">Balance Left</div>
+              <div class="font-weight-bold text-dark">Rp20.000</div>
+            </div>
+
+            <div class="shadow-sm rounded-14 pl-3 my-4 py-3">
+              <div class="small">Date & Time</div>
+              <div class="font-weight-bold text-dark">May 11, 2020 - 12.20</div>
+            </div>
+
+            <div class="shadow-sm rounded-14 pl-3 my-4 py-3">
+              <div class="small">Notes</div>
+              <div class="font-weight-bold text-dark">
+                For buying some socks
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="font-weight-bold">Transfer To</div>
+            </div>
+
+            <div
+              class="d-flex align-items-center justify-content-between shadow-sm rounded-14 pl-3 my-3 py-3"
+            >
+              <div class="d-flex align-items-center">
+                <img src="assets/images/1.png" height="56px" width="56px" />
+                <div class="pl-3">
+                  <div class="font-weight-bold text-dark">Samuel Suhi</div>
+                  <div class="small">+62 813-8492-9994</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-end mt-4">
+              <button
+                class="py-2 px-2 rounded-14 btn bg-grey mr-3"
+                data-toggle="modal"
+                data-target="#staticBackdrop"
+              >
+                <img
+                  src="assets/images/icons/share-2.svg"
+                  height="22px"
+                  width="22px"
+                />
+              </button>
+
+              <button
+                class="py-2 px-lg-4 px-2 align-items-center rounded-14 btn bg-grey d-flex mr-3"
+                data-toggle="modal"
+                data-target="#staticBackdrop"
+              >
+                <img
+                  src="assets/images/icons/download.svg"
+                  height="22px"
+                  width="22px"
+                />
+
+                <div class="text-primary ml-2">Download PDF</div>
+              </button>
+
+              <button
+                class="py-2 px-lg-4 px-2 rounded-14 btn btn-primary"
+                data-toggle="modal"
+                data-target="#staticBackdrop"
+              >
+                Back to Home
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Content -->
+
+    <!-- Footer -->
+    <footer class="bg-primary py-3">
+      <div class="container">
+        <div
+          class="d-lg-flex flex-row-reverse text-center text-lg-left justify-content-between align-items-center"
+        >
+          <div class="d-flex justify-content-center justify-content-lg-start">
+            <div class="text-white mr-4 small">+62 5637 8882 9901</div>
+            <div class="text-white small">contact@zwallet.com</div>
+          </div>
+
+          <div class="text-white">2020 Zwallet. All right reserved.</div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="assets/js/dashboard.js"></script>
+    <script src="assets/js/jquery-slim.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
