@@ -3,133 +3,106 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ZWallet</title>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
-    />
+    <title>Document</title>
+
     <link rel="stylesheet" href="/assets/css/styles.css" />
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/assets/css/bootstrap-custom.css" />
-
-    <!-- <link rel="stylesheet" href="/assets/css/bootstrap-grid.min.css" />
-    <link rel="stylesheet" href="/assets/css/bootstrap-reboot.min.css" /> -->
   </head>
+  <!-- 
+    
+  ***     Auther: Api Al Rahman    ***
+
+  -->
   <body>
-    <nav class="py-4 fixed-top">
-      <div class="container">
-        <div class="d-flex justify-content-between align-items-center">
-          <h4 class="font-weight-bold text-primary mb-0">ZWallet</h4>
-
-          <div>
-            <a
-              class="btn text-light bg-white-outline mx-2 py-2 px-4 font-weight-bold"
-            >
-              Login
-            </a>
-            <a class="btn btn-light text-primary mx-2 py-2 px-4"> Sign Up </a>
-          </div>
-        </div>
-      </div>
-    </nav>
-
-    <section class="landing container">
-      <div class="bg-landing d-md-block d-none"></div>
-
-      <div class="row align-items-center justify-content-md-between h-100">
-        <div class="col-md-6 flex text-center text-md-left">
-          <h1 class="font-weight-bold">
-            Awesome App For Saving <span class="text-primary">Time</span>.
-          </h1>
-
-          <div class="py-3">
-            Lorem Ipsum sit amet dolor, lorem ipsum sit amet dolor Lorem Ipsum
-            sit amet dolor, lorem ipsum sit amet dolor Lorem Ipsum sit amet
-            dolor, lorem ipsum sit amet dolor Lorem Ipsum sit amet dolor, lorem
-            ipsum sit amet dolorLorem Ipsum sit amet dolor, lorem ipsum sit amet
-            dolor
-          </div>
-
-          <a class="btn btn-primary py-2 px-4"> Sign Up </a>
-        </div>
-
-        <div class="col-md-5"></div>
-      </div>
-    </section>
-
-    <section class="bg-secondary py-5">
-      <div class="container">
-        <h1 class="text-center font-weight-bold">
-          <span class="text-primary">About</span> the Application
-        </h1>
-        <div class="d-flex justify-content-center py-2">
-          <div class="w-50 text-center">
-            Lorem Ipsum sit amet dolor, lorem ipsum sit amet dolor Lorem Ipsum
-            sit amet dolor
-          </div>
-        </div>
-
-        <div class="row mt-4">
-          <div class="px-md-2 col-md-4">
-            <div class="card py-3">
-              <div class="card-body">
-                <div class="d-flex align-items-center flex-column">
-                  <div>Icon</div>
-                  <div class="py-3 font-weight-bold">Lorem Ipsum</div>
-                  <div class="text-center">
-                    Lorem Ipsum Lorem Ipsum Lorem Ipsum sit amet dolor
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="px-md-2 col-md-4">
-            <div class="card py-3">
-              <div class="card-body">
-                <div class="d-flex align-items-center flex-column">
-                  <div>Icon</div>
-                  <div class="py-3 font-weight-bold">Lorem Ipsum</div>
-                  <div class="text-center">
-                    Lorem Ipsum Lorem Ipsum Lorem Ipsum sit amet dolor
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="px-md-2 col-md-4">
-            <div class="card py-3">
-              <div class="card-body">
-                <div class="d-flex align-items-center flex-column">
-                  <div>Icon</div>
-                  <div class="py-3 font-weight-bold">Lorem Ipsum</div>
-                  <div class="text-center">
-                    Lorem Ipsum Lorem Ipsum Lorem Ipsum sit amet dolor
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="container py-5">
+    <div class="container-fluid">
       <div class="row">
-        <div class="col-4">
-          <h1 class="font-weight-bold">
-            100+ <span class="text-primary">Trusted</span> Partners.
-          </h1>
+        <div class="col-7 d-lg-block d-none bg-side-auth px-5">
+          <div class="mx-5 px-5 pt-4">
+            <h4 class="font-weight-bold text-white">ZWallet</h4>
 
-          <span class="pt-3">
-            Lorem ipsum sit amet dolor lorem ispum sit amet dolor
-          </span>
+            <img
+              alt="Phone Auth Image"
+              src="assets/images/phone-auth.webp"
+              class="phone-auth-image"
+            />
+
+            <h5 class="font-weight-bold text-white">
+              App that Covering Banking Needs.
+            </h5>
+
+            <div class="text-white">
+              Zwallet is an application that focussing in banking needs for all
+              users in the world. Always updated and always following world
+              trends. 5000+ users registered in Zwallet everyday with worldwide
+              users coverage.
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="container pt-md-5 mt-md-5 px-md-5 py-md-0 py-5">
+            <h4 class="font-weight-bold text-primary d-lg-none">ZWallet</h4>
+
+            <h4 class="font-weight-bold mt-5 mt-md-0 text-center text-lg-left">
+              Start Accessing Banking Needs With All Devices and All Platforms
+              With 30.000+ Users
+            </h4>
+
+            <div class="text-black-50 my-4 text-center text-lg-left">
+              Transfering money is eassier than ever, you can access Zwallet
+              wherever you are. Desktop, laptop, mobile phone? we cover all of
+              that for you!
+            </div>
+
+            <form action="/dashboard.html">
+              <div class="input-container mt-5">
+                <label for="email" class="d-flex w-100">
+                  <span class="i-mail"></span>
+                  <input
+                    id="email"
+                    placeholder="Enter your e-mail"
+                    type="text"
+                    class="input-line"
+                  />
+                </label>
+              </div>
+
+              <div class="input-container mt-5">
+                <label class="d-flex w-100">
+                  <span class="i-lock"></span>
+                  <input
+                    placeholder="Enter your password"
+                    type="text"
+                    class="input-line"
+                  />
+                  <span class="i-eye-crossed"></span>
+                </label>
+              </div>
+              <div class="d-flex justify-content-end">
+                <a href="#" class="small text-black-50 text-right mt-2 mb-5">
+                  Forgot Password?
+                </a>
+              </div>
+
+              <button
+                class="btn btn-primary shadow-sm w-100 py-2"
+                type="submit"
+              >
+                Login
+              </button>
+
+              <div class="text-black-50 text-center mt-3">
+                Don’t have an account? Let’s
+                <a href="#" class="text-primary">Sign Up</a>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
-    </section>
-  </body>
+    </div>
 
-  <script src="assets/js/jquery-slim.min.js"></script>
-  <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery-slim.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
 </html>
