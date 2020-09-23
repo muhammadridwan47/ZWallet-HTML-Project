@@ -31,13 +31,15 @@ Download the projects:
 Projects structure:
 ```
 
-|~| assets/
-	|~| css/
-		|~| disini isi file .css
-	|~| js/
-		|~| disini isi file .js
-	|~| images/
-		|~| disini isi file images .jpg, .png, .svg, .webp
+|_ assets/
+   |_ css/
+      |_ disini isi file .css
+      
+   |_ js/
+      |_ disini isi file .js
+      
+   |_ images/
+      |_ disini isi file images .jpg, .png, .svg, .webp
 		
 ```
 
