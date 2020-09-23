@@ -336,8 +336,9 @@
               <input
                 class="d-block font-weight-bold input-only-placeholder"
                 placeholder="0.00"
-                type="number"
-                maxlength="1"
+                type="text"
+                maxlength="19"
+                id="currency"
               />
 
               <div class="font-weight-bold mt-3 mb-5">Rp120.000 Available</div>
@@ -387,6 +388,14 @@
     <!-- End Footer -->
 
     <script src="assets/js/dashboard.js"></script>
+
+    <script>
+      const currency = document.getElementById("currency");
+      currency.oninput = function (e) {
+        e.target.value = rupiahFormat(e.target.value, "Rp. ");
+      };
+    </script>
+
     <script src="assets/js/jquery-slim.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
   </body>
