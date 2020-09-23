@@ -24,9 +24,9 @@ Saat ini <strong>ZWallet</strong> dibuat hanya dengan <strong>HTML, CSS, JS</str
 
 ### # HOW TO INSTALL
 Download the projects: 
-``
+```
 ~$ git clone https://github.com/userexynos/ZWallet-HTML-Project
-``
+```
 
 Projects structure:
 ```
