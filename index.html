@@ -3,106 +3,321 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-
+    <title>ZWallet</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+    />
     <link rel="stylesheet" href="/assets/css/styles.css" />
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/assets/css/bootstrap-custom.css" />
+
+    <!-- <link rel="stylesheet" href="/assets/css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="/assets/css/bootstrap-reboot.min.css" /> -->
   </head>
-  <!-- 
-    
-  ***     Auther: Api Al Rahman    ***
-
-  -->
   <body>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-7 d-lg-block d-none bg-side-auth px-5">
-          <div class="mx-5 px-5 pt-4">
-            <h4 class="font-weight-bold text-white">ZWallet</h4>
+    <nav class="py-4">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <h4 class="font-weight-bold text-primary mb-0">ZWallet</h4>
 
-            <img
-              alt="Phone Auth Image"
-              src="assets/images/phone-auth.webp"
-              class="phone-auth-image"
-            />
-
-            <h5 class="font-weight-bold text-white">
-              App that Covering Banking Needs.
-            </h5>
-
-            <div class="text-white">
-              Zwallet is an application that focussing in banking needs for all
-              users in the world. Always updated and always following world
-              trends. 5000+ users registered in Zwallet everyday with worldwide
-              users coverage.
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-5">
-          <div class="container pt-md-5 mt-md-5 px-md-5 py-md-0 py-5">
-            <h4 class="font-weight-bold text-primary d-lg-none">ZWallet</h4>
-
-            <h4 class="font-weight-bold mt-5 mt-md-0 text-center text-lg-left">
-              Start Accessing Banking Needs With All Devices and All Platforms
-              With 30.000+ Users
-            </h4>
-
-            <div class="text-black-50 my-4 text-center text-lg-left">
-              Transfering money is eassier than ever, you can access Zwallet
-              wherever you are. Desktop, laptop, mobile phone? we cover all of
-              that for you!
-            </div>
-
-            <form action="/dashboard.html">
-              <div class="input-container mt-5">
-                <label for="email" class="d-flex w-100">
-                  <span class="i-mail"></span>
-                  <input
-                    id="email"
-                    placeholder="Enter your e-mail"
-                    type="text"
-                    class="input-line"
-                  />
-                </label>
-              </div>
-
-              <div class="input-container mt-5">
-                <label class="d-flex w-100">
-                  <span class="i-lock"></span>
-                  <input
-                    placeholder="Enter your password"
-                    type="text"
-                    class="input-line"
-                  />
-                  <span class="i-eye-crossed"></span>
-                </label>
-              </div>
-              <div class="d-flex justify-content-end">
-                <a href="#" class="small text-black-50 text-right mt-2 mb-5">
-                  Forgot Password?
-                </a>
-              </div>
-
-              <button
-                class="btn btn-primary shadow-sm w-100 py-2"
-                type="submit"
-              >
-                Login
-              </button>
-
-              <div class="text-black-50 text-center mt-3">
-                Don’t have an account? Let’s
-                <a href="#" class="text-primary">Sign Up</a>
-              </div>
-            </form>
+          <div>
+            <a
+              href="/login.html"
+              class="btn text-light bg-primary-outline rounded-14 mx-2 py-2 px-4 font-weight-bold"
+            >
+              Login
+            </a>
+            <a
+              href="/signup.html"
+              class="btn btn-light text-primary mx-2 rounded-14 py-2 px-4"
+            >
+              Sign Up
+            </a>
           </div>
         </div>
       </div>
-    </div>
+    </nav>
 
-    <script src="assets/js/jquery-slim.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+    <section class="container landing">
+      <div class="bg-landing z-index--1 d-lg-block d-none"></div>
+
+      <div
+        class="row align-items-center flex-row-reverse justify-content-md-between"
+      >
+        <div class="col-md-6 d-flex justify-content-center">
+          <img class="phone-landing" src="assets/images/png-phone.webp" />
+        </div>
+
+        <div class="col-md-6 flex text-center text-md-left">
+          <h1 class="font-weight-bold">
+            Awesome App <br />
+            For Saving <span class="text-primary">Time</span>.
+          </h1>
+
+          <div class="py-4">
+            We bring you a mobile app for banking problems that oftenly wasting
+            much of your times.
+          </div>
+
+          <a href="/signup.html" class="btn btn-primary px-4 py-3 rounded-14">
+            Sign Up
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-secondary py-5">
+      <div class="container">
+        <h1 class="text-center font-weight-bold">
+          <span class="text-primary">About</span> the Application
+        </h1>
+        <div class="d-flex justify-content-center py-2">
+          <div class="w-50 text-center d-none d-lg-block">
+            We have some great features from the application and it’s totally
+            free to use by all users around the world.
+          </div>
+        </div>
+
+        <div class="text-center d-block d-lg-none">
+          We have some great features from the application and it’s totally free
+          to use by all users around the world.
+        </div>
+
+        <div class="row mt-5">
+          <div class="px-lg-2 py-2 py-lg-0 col-lg-4">
+            <div class="card p-4 rounded-14">
+              <div class="card-body">
+                <div class="d-flex align-items-center flex-column">
+                  <img
+                    src="assets/images/icons/phone.svg"
+                    height="60px"
+                    width="60px"
+                  />
+                  <h5 class="py-4 font-weight-bold">24/7 Support</h5>
+                  <div class="text-center">
+                    We have 24/7 contact support so you can contact us whenever
+                    you want and we will respond it.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="px-lg-2 py-2 py-lg-0 col-lg-4">
+            <div class="card p-4 rounded-14">
+              <div class="card-body">
+                <div class="d-flex align-items-center flex-column">
+                  <img
+                    src="assets/images/icons/lock2.svg"
+                    height="60px"
+                    width="60px"
+                  />
+                  <h5 class="py-4 font-weight-bold">Data Privacy</h5>
+                  <div class="text-center">
+                    We make sure your data is safe in our database and we will
+                    encrypt any data you submitted to us.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="px-lg-2 py-2 py-lg-0 col-lg-4">
+            <div class="card p-4 rounded-14">
+              <div class="card-body">
+                <div class="d-flex align-items-center flex-column">
+                  <img
+                    src="assets/images/icons/download2.svg"
+                    height="60px"
+                    width="60px"
+                  />
+                  <h5 class="py-4 font-weight-bold">Easy Download</h5>
+                  <div class="text-center">
+                    Zwallet is 100% totally free to use it’s now available on
+                    Google Play Store and App Store.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container py-lg-3 py-5">
+      <div class="row align-items-center">
+        <div class="col-md-5 text-center text-lg-left">
+          <h1 class="font-weight-bold">
+            100+ <span class="text-primary">Trusted</span> Partners.
+          </h1>
+
+          <div class="mt-lg-4 mt-2">
+            We have reached global level and have 100+ brand partners around the
+            globe.
+          </div>
+        </div>
+
+        <div class="col-md-7 d-flex justify-content-center mt-lg-0 mt-4">
+          <img src="assets/images/icons/partner.svg" width="100%" />
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-secondary py-lg-3 pb-5 pb-lg-0">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-5 d-flex justify-content-center">
+            <img class="phone-landing2" src="assets/images/png-phone2.webp" />
+          </div>
+
+          <div class="col-lg-7 pl-3">
+            <h1 class="font-weight-bold mb-3 d-block text-lg-left text-center">
+              All The <span class="text-primary">Great</span><br />
+              Zwallet Features.
+            </h1>
+
+            <div class="shadow-sm rounded-14 p-4 mt-4 bg-white">
+              <div class="font-weight-bold">
+                <span class="text-primary">1.</span> Small Fee
+              </div>
+              <div class="text-dark mt-3">
+                We only charge 5% of every success transaction done in Zwallet
+                app.
+              </div>
+            </div>
+
+            <div class="shadow-sm rounded-14 p-4 mt-4 bg-white">
+              <div class="font-weight-bold">
+                <span class="text-primary">2.</span> Data Secured
+              </div>
+              <div class="text-dark mt-3">
+                All your data is secured properly in our system and it’s
+                encrypted.
+              </div>
+            </div>
+
+            <div class="shadow-sm rounded-14 p-4 mt-4 bg-white">
+              <div class="font-weight-bold">
+                <span class="text-primary">3.</span> User Friendly
+              </div>
+              <div class="text-dark mt-3">
+                Zwallet come up with modern and sleek design and not
+                complicated.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container py-5">
+      <h1 class="text-center font-weight-bold">
+        What Users are <span class="text-primary">Saying.</span>
+      </h1>
+      <div class="d-flex justify-content-center my-4">
+        <div class="w-50 text-center d-none d-lg-block">
+          We have some great features from the application and it’s totally free
+          to use by all users around the world.
+        </div>
+
+        <div class="text-center d-block d-lg-none">
+          We have some great features from the application and it’s totally free
+          to use by all users around the world.
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="px-lg-2 py-2 py-lg-0 col-lg-4">
+          <div class="card p-4 rounded-14">
+            <div class="card-body">
+              <div class="d-flex align-items-center flex-column">
+                <img
+                  src="assets/images/cristine.png"
+                  height="60px"
+                  width="60px"
+                />
+                <h5 class="py-4 font-weight-bold">Sherina Chaw</h5>
+                <div class="text-center">
+                  “I use this app since 2 years ago and this is the best app
+                  that I’ve ever use in my entire life”
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="px-lg-2 py-2 py-lg-0 col-lg-4">
+          <div class="card p-4 rounded-14">
+            <div class="card-body">
+              <div class="d-flex align-items-center flex-column">
+                <img
+                  src="assets/images/jessica.png"
+                  height="60px"
+                  width="60px"
+                />
+                <h5 class="py-4 font-weight-bold">Jessica Mera</h5>
+                <div class="text-center">
+                  “I use Zwallet to manage all financial needs. It’s super easy
+                  to use and it’s 100% free app”
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="px-lg-2 py-2 py-lg-0 col-lg-4">
+          <div class="card p-4 rounded-14">
+            <div class="card-body">
+              <div class="d-flex align-items-center flex-column">
+                <img src="assets/images/momo.png" height="60px" width="60px" />
+                <h5 class="py-4 font-weight-bold">Robert Chandler</h5>
+                <div class="text-center">
+                  “Since I’m using this app, I’m not going to move to another
+                  similar app. Thank you Zwallet!”
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-primary py-5">
+      <div class="container text-white">
+        <div class="w-25 d-none d-lg-block">
+          <h1 class="font-weight-bold">Zwallet</h1>
+          <div class="my-4">
+            Simplify financial needs and saving much time in banking needs with
+            one single app.
+          </div>
+        </div>
+
+        <div class="d-block d-lg-none text-center">
+          <h1 class="font-weight-bold">Zwallet</h1>
+          <div class="my-4">
+            Simplify financial needs and saving much time in banking needs with
+            one single app.
+          </div>
+        </div>
+
+        <hr class="bg-white" />
+
+        <div
+          class="d-lg-flex flex-row-reverse text-center text-lg-left justify-content-between align-items-center"
+        >
+          <div class="d-flex justify-content-center justify-content-lg-start">
+            <div class="text-white mr-4 small">+62 5637 8882 9901</div>
+            <div class="text-white small">contact@zwallet.com</div>
+          </div>
+
+          <div class="text-white">2020 Zwallet. All right reserved.</div>
+        </div>
+      </div>
+    </footer>
   </body>
+
+  <script></script>
+  <script src="assets/js/jquery-slim.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
 </html>

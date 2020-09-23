@@ -4,14 +4,14 @@
     Author: Api Rahman
 
 */
-
+/* 
 :root {
   --color-primary: #6379f4;
   --color-secondary: #fafcff;
   --color-dark: #3a3d42;
   --color-white: #ffffff;
   --color-danger: #ff5b37;
-}
+} */
 
 /* Customize color bootstrap */
 
@@ -152,4 +152,22 @@
 .sticky-top-15 {
   position: sticky;
   top: 15px;
+}
+
+/* vh */
+
+.vh-90 {
+  min-height: 90vh;
+  height: 100%;
+}
+
+.vh-85 {
+  min-height: 85vh;
+  height: 100%;
+}
+
+/* Rounded */
+
+.rounded-14 {
+  border-radius: 14px !important;
 }

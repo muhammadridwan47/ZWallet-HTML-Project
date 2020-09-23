@@ -50,7 +50,10 @@
               money.
             </div>
 
-            <form action="success.html">
+            <form
+              action="success-
+            transfer.html"
+            >
               <div class="my-5 row no-gutters container-input">
                 <div class="col-2 input-class px-2 px-lg-0">
                   <input
@@ -58,6 +61,17 @@
                     type="text"
                     oninput="onChangeInput(this)"
                     maxlength="1"
+                    placeholder="_"
+                  />
+                </div>
+
+                <div class="col-2 input-class px-2 px-lg-0">
+                  <input
+                    class="input-bordered-small font-weight-bold rounded-14"
+                    oninput="onChangeInput(this)"
+                    type="text"
+                    maxlength="1"
+                    placeholder="_"
                   />
                 </div>
 
@@ -67,6 +81,7 @@
                     type="text"
                     oninput="onChangeInput(this)"
                     maxlength="1"
+                    placeholder="_"
                   />
                 </div>
 
@@ -76,6 +91,7 @@
                     type="text"
                     oninput="onChangeInput(this)"
                     maxlength="1"
+                    placeholder="_"
                   />
                 </div>
 
@@ -85,6 +101,7 @@
                     type="text"
                     oninput="onChangeInput(this)"
                     maxlength="1"
+                    placeholder="_"
                   />
                 </div>
 
@@ -94,15 +111,7 @@
                     type="text"
                     oninput="onChangeInput(this)"
                     maxlength="1"
-                  />
-                </div>
-
-                <div class="col-2 input-class px-2 px-lg-0">
-                  <input
-                    class="input-bordered-small font-weight-bold rounded-14"
-                    type="text"
-                    oninput="onChangeInput(this)"
-                    maxlength="1"
+                    placeholder="_"
                   />
                 </div>
               </div>
@@ -126,7 +135,7 @@
     <nav class="bg-white py-4 shadow-sm">
       <div class="container">
         <div class="d-flex justify-content-between align-items-center">
-          <a href="/">
+          <a href="/dashboard.html">
             <h4 class="font-weight-bold text-primary">ZWallet</h4>
           </a>
 
@@ -151,19 +160,93 @@
               <span class="small text-black-50">+62 8139 3877 7946</span>
             </div>
 
-            <a href="#">
+            <button class="btn" id="btn-notification2">
               <img
                 alt="notification"
                 src="assets/images/icons/bell.svg"
                 height="24px"
                 width="24px"
               />
-            </a>
+            </button>
           </div>
         </div>
       </div>
     </nav>
     <!-- End Navbar -->
+
+    <!-- Notification -->
+    <div class="container d-flex justify-content-center justify-content-md-end">
+      <div
+        class="notification shadow-lg rounded-14 bg-white p-4"
+        id="notification"
+      >
+        <div
+          class="d-flex align-items-center justify-content-end position-absolute w-100 pr-5"
+        >
+          <button type="button" class="btn p-0" id="dismiss-notification">
+            <img src="assets/images/icons/x.svg" height="28px" width="28px" />
+          </button>
+        </div>
+
+        <div>Today</div>
+
+        <div
+          class="d-flex align-items-center shadow-sm rounded-14 pl-3 my-3 p-4"
+        >
+          <img
+            class="align-self-start"
+            src="assets/images/icons/arrow-up-green.svg"
+          />
+          <div class="ml-3">
+            <div class="small">Transfered from Joshua Lee</div>
+            <div class="font-weight-bold">Rp220.000</div>
+          </div>
+        </div>
+
+        <div
+          class="d-flex align-items-center shadow-sm rounded-14 pl-3 my-3 p-4"
+        >
+          <img
+            class="align-self-start"
+            src="assets/images/icons/arrow-up-red.svg"
+          />
+          <div class="ml-3">
+            <div class="small">Netflix subscription</div>
+            <div class="font-weight-bold">Rp149.000</div>
+          </div>
+        </div>
+
+        <div class="my-2">This Week</div>
+
+        <div
+          class="d-flex align-items-center shadow-sm rounded-14 pl-3 my-3 p-4"
+        >
+          <img
+            class="align-self-start"
+            src="assets/images/icons/arrow-up-red.svg"
+          />
+          <div class="ml-3">
+            <div class="small">Transfer to Jessica Lee</div>
+            <div class="font-weight-bold">Rp100.000</div>
+          </div>
+        </div>
+
+        <div
+          class="d-flex align-items-center shadow-sm rounded-14 pl-3 my-3 p-4"
+        >
+          <img
+            class="align-self-start"
+            src="assets/images/icons/arrow-up-green.svg"
+          />
+          <div class="ml-3">
+            <div class="small">Top up from BNI E-Banking</div>
+            <div class="font-weight-bold">Rp300.000</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Notification -->
 
     <!-- Sidebar -->
     <div class="side-navbar d-lg-none p-4" id="sidebar">
@@ -189,14 +272,14 @@
             <span class="small text-black-50">+62 8139 3877 7946</span>
           </div>
 
-          <a href="#">
+          <button class="btn" id="btn-notification">
             <img
               alt="notification"
               src="assets/images/icons/bell.svg"
               height="24px"
               width="24px"
             />
-          </a>
+          </button>
         </div>
 
         <hr class="my-3" />
@@ -231,7 +314,7 @@
               height="24px"
               width="24px"
             />
-            <a href="#" class="text-dark">
+            <a href="/topup.html" class="text-dark">
               <h6 class="ml-2 mb-0">Top Up</h6>
             </a>
           </li>
@@ -244,6 +327,17 @@
             />
             <a href="#" class="text-dark">
               <h6 class="ml-2 mb-0">Profile</h6>
+            </a>
+          </li>
+          <li class="d-flex align-items-center my-4">
+            <img
+              alt="logout"
+              src="assets/images/icons/log-out.svg"
+              height="24px"
+              width="24px"
+            />
+            <a href="/login.html" class="text-dark">
+              <h6 class="ml-2 mb-0">Keluar</h6>
             </a>
           </li>
         </ul>
@@ -289,7 +383,7 @@
                 height="24px"
                 width="24px"
               />
-              <a href="#" class="text-dark">
+              <a href="/topup.html" class="text-dark">
                 <h6 class="ml-2 mb-0">Top Up</h6>
               </a>
             </li>
@@ -314,7 +408,7 @@
                 height="24px"
                 width="24px"
               />
-              <a href="#" class="text-dark">
+              <a href="/login.html" class="text-dark">
                 <h6 class="ml-2 mb-0">Keluar</h6>
               </a>
             </li>
@@ -393,29 +487,9 @@
       </div>
     </footer>
     <!-- End Footer -->
-    <script type="text/javascript">
-      const onChangeInput = (e) => {
-        const value = e.value;
-        const isNumber = value.match(/[0-9]/i);
-        if (!isNumber) return (e.value = "");
-      };
 
-      var container = document.getElementsByClassName("input-class");
-      Array.from(container).forEach((item, index) => {
-        item.onkeyup = function (e) {
-          // console.log(e);
-          const target = e.target;
-          const myLength = target.value.length;
-          if (myLength >= 1) {
-            if (index < container.length - 1) {
-              const next = container.item(index + 1);
-              next.firstElementChild.focus();
-            }
-          }
-        };
-      });
-    </script>
     <script src="assets/js/dashboard.js"></script>
+    <script src="assets/js/input-small-border.js"></script>
     <script src="assets/js/jquery-slim.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
   </body>
